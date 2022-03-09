@@ -1,0 +1,71 @@
+.Header_Background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url("../images/top_bg.jpg");
+}
+
+.Header_Content {
+    background-image: url("../images/header_bg.jpg");
+}
+
+.Header_Contacts {
+    text-align: right;
+    color: #ffffff;
+    font-size: 0.5rem;
+    margin: 17px 0;
+}
+
+.Header_Links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header_Navigation {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.Home_Link {
+    text-decoration: none;
+    color: #ffffff;
+    background-image: url("../images/home_hover.jpg");
+    background-size: cover;
+    padding: 10px 20px;
+}
+
+.Header_Link_Style {
+    text-decoration: none;
+    color: #000000;
+}
+
+.Header_Link_Style:hover {
+    color: #ffffff;
+    background-image: url(../images/contact_hover.jpg);
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+}
+
+.Header_About {
+    width: 60%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.About_Link {
+    text-decoration: none;
+    color: #000000;
+    background-color: #DADADA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+.About_Link:hover {
+    color: #FF5733;
+}

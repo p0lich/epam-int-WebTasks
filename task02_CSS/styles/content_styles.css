@@ -1,0 +1,35 @@
+.Content_Strategy {
+    background-image: url("../images/growth_bg.jpg");
+}
+
+.Strategy_Text {
+    width: 90%;
+    font-size: 0.8rem;
+}
+
+.Flex_Content {
+    display: flex;
+}
+
+.Content_Title {
+
+}
+
+.Foreword {
+    color: #24A81B;
+    font-size: 1.2rem;
+}
+
+.Read_More_Link {
+    text-decoration: none;
+    color: #FF5733;
+    background-image: url("../images/orange_dot.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    padding-left: 10px;
+}
+
+.Read_More_Link:hover {
+    color: #24A81B;
+    background-image: url("../images/green_dot.jpg");
+}
