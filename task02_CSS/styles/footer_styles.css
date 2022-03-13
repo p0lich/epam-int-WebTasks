@@ -1,0 +1,39 @@
+.Footer_Background {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-image: url("../images/footer_bg.jpg");
+    background-size: auto 100%;
+}
+
+.Footer_Content {
+    display: flex;
+    align-items: center;
+}
+
+.Footer_Navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+.Footer_Home {
+    text-decoration: none;
+    color: #24A81B;
+}
+
+.Footer_Link {
+    text-decoration: none;
+    color: #FF5733;
+}
+
+.Footer_Link:hover {
+    color: #24A81B;
+}
+
+.vl {
+    border-left: 2px solid #FF5733;
+    height: 15px;
+}

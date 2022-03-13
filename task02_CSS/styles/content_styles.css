@@ -1,5 +1,10 @@
 .Content_Strategy {
+    color: #474747;
     background-image: url("../images/growth_bg.jpg");
+}
+
+.Strategy_Title {
+    margin-top: 25px;
 }
 
 .Strategy_Text {
@@ -9,15 +14,28 @@
 
 .Flex_Content {
     display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-.Content_Title {
-
+.Content_Main {
+    width: 65%;
 }
 
 .Foreword {
     color: #24A81B;
     font-size: 1.2rem;
+}
+
+.Long_Link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FF5733;
+}
+
+.Long_Link:hover {
+    color: #24A81B;
 }
 
 .Read_More_Link {
@@ -32,4 +50,94 @@
 .Read_More_Link:hover {
     color: #24A81B;
     background-image: url("../images/green_dot.jpg");
+}
+
+.Content_Picture {
+    float: left;
+}
+
+.Content_Aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 256px;
+}
+
+.Aside_Background {
+    background-color: #ececec;
+    border-radius: 10px;
+    border-bottom: 2px solid #777777;
+}
+
+.Login_Form {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    background-image: url("../images/login_top.jpg");
+    background-repeat: no-repeat;
+}
+
+.Form_Title {
+    font-size: 1.8rem;
+    color: #24A81B;
+    margin: 20px 0px 30px 15px;
+}
+
+.Form_Input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+
+.Form_Input_Field {
+    border-radius: 25px;
+}
+
+.Form_Submit {
+    width: 60px;
+    border-radius: 25px;
+    border-width: 0;
+    color: #ffffff;
+    background-color: #555555;
+    padding: 5px 10px;
+    box-shadow: 0px -10px 5px rgba(99, 99, 99, 0.4) inset;
+}
+
+.Form_Submit:hover {
+    background-color: #FF5733;
+}
+
+.Form_Link {
+    text-decoration: none;
+    color: #000000;
+    background-image: url("../images/orange_dot.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    padding-left: 10px;
+}
+
+.Form_Link:hover {
+    color: #FF5733;
+}
+
+.Content_News {
+    width: 256px;
+    background-image: url("../images/event_top.jpg");
+    background-repeat: no-repeat;
+}
+
+.News_Title {
+    font-size: 1.3rem;
+    color: #FF5733;
+    margin: 30px 0px 20px 70px;
+}
+
+.News_Date {
+    font-size: 0.9rem;
+    color: #7C0F00;
+}
+
+.Right_Icon {
+    float: left;
+    padding-right: 10px;
 }

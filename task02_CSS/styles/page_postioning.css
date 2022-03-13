@@ -5,6 +5,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    margin: 0;
+}
+
 .Content_Width {
     width: 1000px;
 }
