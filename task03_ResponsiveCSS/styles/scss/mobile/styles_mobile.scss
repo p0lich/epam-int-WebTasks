@@ -1,0 +1,72 @@
+@import "../const";
+
+.Side_Navigation {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $background_dark;
+    overflow-x: hidden;
+    padding-top: 60px;
+    margin-top: 10%;
+    transition: 0.5s;
+}
+  
+.Side_Navigation a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $font_light;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid $border_dark;
+}
+
+.Side_Navigation a:first-child {
+    border-bottom: none;
+}
+  
+.Side_Navigation .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.Top_Icons {
+    display: flex;
+    max-height: 8%;
+}
+
+.Content {
+    background-color: $background_gray;
+    width: 96%;
+    padding: 1% 2%;
+}
+
+.Switch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Form_Search {
+    display: flex;
+    flex-direction: column;
+}
+
+.Buttons_Group {
+    margin-bottom: 5px;
+}
+
+.Person_Info {
+    
+}
+
+.Person_About {
+    width: 100%;
+    color: $font_red;
+    background-color: $background_light;
+}

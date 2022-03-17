@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "styles_tablet.scss"
+    ],
+    "names": [],
+    "file": "styles_tablet.css"
+}

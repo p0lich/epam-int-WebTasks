@@ -1,0 +1,80 @@
+.Side_Navigation {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #464646;
+  overflow-x: hidden;
+  padding-top: 60px;
+  margin-top: 10%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Side_Navigation a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #EEEEEE;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid #000000;
+}
+
+.Side_Navigation a:first-child {
+  border-bottom: none;
+}
+
+.Side_Navigation .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.Top_Icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 8%;
+}
+
+.Content {
+  background-color: #828282;
+  width: 96%;
+  padding: 1% 2%;
+}
+
+.Switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Form_Search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Buttons_Group {
+  margin-bottom: 5px;
+}
+
+.Person_About {
+  width: 100%;
+  color: #FF0000;
+  background-color: #C1C1C1;
+}
+/*# sourceMappingURL=styles_mobile.css.map */
