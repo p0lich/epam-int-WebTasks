@@ -1,0 +1,142 @@
+.Page_Table {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+.tg td {
+    border-color:black;
+    border-style:solid;
+    border-width: 1px;
+    overflow:hidden;
+    padding:0;
+    word-break:normal;
+}
+.tg th {
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    padding:0;
+    word-break:normal;
+}
+.tg .tg-0lax {
+    text-align:left;
+    vertical-align:top;
+    padding: 0;
+}
+
+.Header_Navigation {
+    height: 100px;
+    padding: 0;
+}
+
+.Logo_Cell {
+    width: 200px;
+}
+
+.Menu_Block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.Image_Logo_Href {
+    height: max-content;
+}
+
+.Image_Title {
+    width: 200px;
+    padding: 0;
+}
+
+.Site_Title {
+    width: 100%;
+    text-align: center;
+}
+
+.Menu_Button {
+    display: block;
+    height: 100px;
+}
+
+.Menu_Back {
+    display: block;
+    background-image: url("../images/menu.png");
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 100%;
+    border-left: 1px #000000 solid;
+    padding: 0px 10px;
+}
+
+.Side_Menu {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.Side_Menu_Header {
+    width: 60%;
+    background-color: #00ffff;    
+    align-items: center;
+    padding: 5px 20%;
+    margin: 0px;
+}
+
+.Table {
+    border-collapse: collapse;
+    width: calc(100% - 10px);
+    margin: 5px;
+}
+
+.Table_Name {
+    text-align: center;
+    font-size: 1.2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #8a0000;
+    margin-bottom: 5px;
+}
+
+.Table_Header {
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 50px;
+}
+
+.No-Image_Style {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 5px;
+}
+
+.Login_Form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border-bottom: 1px #000000 solid;
+    background-color: #e8ecf3;
+}
+
+.Input_Field {
+    width: 50%;
+}
+
+.Input_Field:focus {
+    background: #ffe;
+     border: 1px solid #29B0D9;
+}
+
+.Footer_Text {
+    margin: 0px;
+}
