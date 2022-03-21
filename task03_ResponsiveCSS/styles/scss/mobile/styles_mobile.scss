@@ -52,9 +52,31 @@
     justify-content: space-between;
 }
 
+.Switch .Element {
+    width: 50%;
+    text-align: center;
+    border-top: 1px solid $background_darker;
+    border-right: 1px solid $background_darker;
+    border-left: 1px solid $background_darker;
+    border-radius: 8px 8px 0 0;
+}
+
+.Switch .Active {
+    background-color: $background_gray;
+}
+
+.Switch .NotActive {
+    background-color: $background_darker;
+}
+
 .Form_Search {
     display: flex;
     flex-direction: column;
+    border-right: 1px solid $background_darker;
+    border-bottom: 1px solid $background_darker;
+    border-left: 1px solid $background_darker;
+    padding: 5%;
+    margin-bottom: 10%;
 }
 
 .Buttons_Group {
@@ -62,11 +84,21 @@
 }
 
 .Person_Info {
-    
+    border: 1px solid $background_darker;
+    box-shadow: 5px 4px 2px -1px rgba(0,0,0,0.55);
+    margin-bottom: 10%;
 }
 
 .Person_About {
     width: 100%;
     color: $font_red;
     background-color: $background_light;
+}
+
+.Person_Option {
+    border-bottom: 1px solid $border_dark;
+}
+
+.Person_Option:last-child {
+    border-bottom: none;
 }
