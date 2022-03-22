@@ -21,17 +21,59 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="">EXPERT SEARCH</a>
         <a href="">SAVED EXPERTS</a>
-        <a href="">PROJECTS</a><i class="fa-solid fa-flag"></i>
+        <a href="">PROJECTS <i class="fa-solid fa-flag"></i></a>
         <a href="">CONSULTATIONS</a>
         <a href="">EVENTS</a>
-        <a href=""><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a>
+        <a href="">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></a>
         <p><i class="fa-solid fa-user"></i> LOGGED IN AS</p>
         <p>Girish Gopalan</p>
     </div>
 
     <div class="Content">
         <h3>Project List</h3>
-        <h1>Test Project last</h1><i class="fa-solid fa-circle-plus"></i><i class="fa-solid fa-circle-minus"></i>
+        <h1>Test Project last</h1><i onclick="togglePlusIcon(this)" class="fa-solid fa-circle-plus"></i>
+
+        <div class="Project_About">
+            <div class="flex-row-space_between Top_Line">
+                <p class="Description">Create date</p>
+                <p class="Value">01/20/15</p>
+            </div>
+
+            <div class="flex-row-space_between Top_Line">
+                <p class="Description">Target industries</p>
+                <p class="Value">Wireline Telephone Equipment</p>
+            </div>
+
+            <div class="flex-row-space_between Top_Line">
+                <p class="Description">Bios sent</p>
+                <p class="Value">10</p>
+            </div>
+
+            <div class="flex-row-space_between Top_Line">
+                <p class="Description">Calls sheduled</p>
+                <p class="Value">2</p>
+            </div>
+
+            <div class="flex-row-space_between Top_Line">
+                <p class="Description">Request consultations</p>
+                <p class="Value">10</p>
+            </div>
+
+            <div class="flex-row-space_between Top_Line">
+                <p class="Description">Target companies</p>
+                <p class="Value">Frontier Communications Corporation [FTR]</p>
+            </div>
+
+            <div class="flex-row-space_between Top_Line">
+                <p class="Description">Calls completed</p>
+                <p class="Value">2</p>
+            </div>
+
+            <div class="flex-row-space_between Top_Line">
+                <p class="Description">Calls in sheduling</p>
+                <p class="Value">1</p>
+            </div>
+        </div>
 
         <div class="Switch">
             <p class="Element Active">Experts <i class="fa-solid fa-flag"></i></p>
@@ -40,9 +82,9 @@
 
         <div class="Form_Search">
             <div class="Buttons_Group">
-                <input type="button" value="EXPAND ALL">
-                <input type="button" value="EXPORT">
-                <input type="button" value="FILTRES">
+                <button>EXPAND ALL</button>
+                <button>EXPORT</button>
+                <button><i class="fa-solid fa-filter"></i>FILTERS</button>
             </div>
             
             <select>
@@ -52,7 +94,32 @@
 
         <div class="Person_Info">
             <div class="Person_About">
-                <p>hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello</p>
+                <div class="Short_Description">
+                    <p>INDUSTRY EXPERT</p>
+
+                    <div class="Date_Block">
+                        <p class="Date">07/13/14</p>
+                        <p class="New">NEW</p>
+                    </div>
+                </div>
+
+                <h1 class="Personal">Mikhail Semichev</h1>
+
+                <div class="flex-row-baseline">
+                    <h2 class="Personal">EPAM</h2>
+                    <p class="Public_Box">PUBLIC</p>
+                </div>
+
+                <div class="flex-row-baseline">
+                    <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
+                </div>
+
+                <p>Выполнить адаптивную верстку страницы. При этом необходимо применять Mobile First подход.дходе первым верстается макет для мобильных устройств. Начиная с ширины 750 пикселей начинаем использовать @media для переопределения нужных стилей.</p>
+
+                <p>Ниже представлены три макета в порядке увеличения ширины экрана.</p>
+
+                <p>Размеры, цвета блоков и шрифтов взять из макетов. Для иконок необходимо подключить библиотеку Font Awesome (https://fortawesome.github.io/Font-Awesome/).</p>
+                <p>Если в библиотеке нет нужной нам иконки, вырезаем ее из картинки или ищем аналогичную в интернете. Такие иконки должны быть объединены в общий спрайт иконок.</p>
             </div>
 
             <div>
@@ -64,7 +131,25 @@
 
         <div class="Person_Info">
             <div class="Person_About">
-                <p>hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello</p>
+                <div class="Short_Description">
+                    <p>INDUSTRY EXPERT</p>
+
+                    <div class="Date_Block">
+                        <p class="Date">07/13/14</p>
+                        <p class="New">NEW</p>
+                    </div>
+                </div>
+
+                <h1 class="Personal">Mikhail Semichev</h1>
+
+                <div class="flex-row-baseline">
+                    <h2 class="Personal">EPAM</h2>
+                    <p class="Public_Box">PUBLIC</p>
+                </div>
+
+                <div class="flex-row-baseline">
+                    <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
+                </div>
             </div>
 
             <div>
@@ -77,5 +162,6 @@
 
     <script src="https://kit.fontawesome.com/a870180150.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/side_menu.js"></script>
+    <!-- <script type="text/javascript" src="scripts/toggle_icon.js"></script> -->
 </body>
 </html>

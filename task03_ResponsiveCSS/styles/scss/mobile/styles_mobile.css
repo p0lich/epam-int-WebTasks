@@ -8,7 +8,6 @@
   background-color: #464646;
   overflow-x: hidden;
   padding-top: 60px;
-  margin-top: 10%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -47,6 +46,22 @@
   background-color: #828282;
   width: 96%;
   padding: 1% 2%;
+}
+
+.Project_About {
+  width: auto;
+}
+
+.Top_Line {
+  border-top: 1px solid #000000;
+}
+
+.Description {
+  font-weight: bold;
+}
+
+.Value {
+  color: #2e2e2e;
 }
 
 .Switch {
@@ -107,11 +122,61 @@
   background-color: #C1C1C1;
 }
 
+.Short_Description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Short_Description .Date_Block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  color: #2e2e2e;
+}
+
+.Date_Block .Date {
+  font-size: 0.6rem;
+}
+
+.Date_Block .New {
+  font-size: 0.8rem;
+  color: #EEEEEE;
+  background-color: #FF0000;
+  border-radius: 5px;
+  padding: 0 2px;
+}
+
 .Person_Option {
   border-bottom: 1px solid #000000;
 }
 
 .Person_Option:last-child {
   border-bottom: none;
+}
+
+.Person_About .Personal {
+  color: #000000;
+}
+
+.Public_Box {
+  color: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  padding: 0 2px;
+  margin-left: 2px;
+}
+
+.Personal_Date {
+  font-size: 0.75rem;
+  -webkit-columns: #2e2e2e;
+          columns: #2e2e2e;
+  margin-left: 5%;
 }
 /*# sourceMappingURL=styles_mobile.css.map */

@@ -10,7 +10,6 @@
     background-color: $background_dark;
     overflow-x: hidden;
     padding-top: 60px;
-    margin-top: 10%;
     transition: 0.5s;
 }
   
@@ -45,6 +44,22 @@
     background-color: $background_gray;
     width: 96%;
     padding: 1% 2%;
+}
+
+.Project_About {
+    width: auto;
+}
+
+.Top_Line {
+    border-top: 1px solid $border_dark;
+}
+
+.Description {
+    font-weight: bold;
+}
+
+.Value {
+    color: $font_gray;
 }
 
 .Switch {
@@ -95,10 +110,51 @@
     background-color: $background_light;
 }
 
+.Short_Description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Short_Description .Date_Block {
+    display: flex;
+    align-items: baseline;
+    color: $font_gray;
+}
+
+.Date_Block .Date {
+    font-size: 0.6rem;
+}
+
+.Date_Block .New {
+    font-size: 0.8rem;
+    color: $font_light;
+    background-color: $background_red;
+    border-radius: 5px;
+    padding: 0 2px;
+}
+
 .Person_Option {
     border-bottom: 1px solid $border_dark;
 }
 
 .Person_Option:last-child {
     border-bottom: none;
+}
+
+.Person_About .Personal {
+    color: $font_dark;
+}
+
+.Public_Box {
+    color: $font_red;
+    border: 1px solid $border_red;
+    border-radius: 5px;
+    padding: 0 2px;
+    margin-left: 2px;
+}
+
+.Personal_Date {
+    font-size: 0.75rem;
+    columns: $font_gray;
+    margin-left: 5%;
 }
