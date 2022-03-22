@@ -1,3 +1,23 @@
+.Page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Menu_Section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .Side_Navigation {
   height: 100%;
   width: 0;
@@ -48,7 +68,20 @@
   padding: 1% 2%;
 }
 
+#project_details {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
 .Project_About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: auto;
 }
 
@@ -153,18 +186,6 @@
   padding: 0 2px;
 }
 
-.Person_Option {
-  border-bottom: 1px solid #000000;
-}
-
-.Person_Option:last-child {
-  border-bottom: none;
-}
-
-.Person_About .Personal {
-  color: #000000;
-}
-
 .Public_Box {
   color: #FF0000;
   border: 1px solid #FF0000;
@@ -178,5 +199,27 @@
   -webkit-columns: #2e2e2e;
           columns: #2e2e2e;
   margin-left: 5%;
+}
+
+.Person_Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Person_Option {
+  border-bottom: 1px solid #000000;
+}
+
+.Person_Option:last-child {
+  border-bottom: none;
+}
+
+.Person_About .Personal {
+  color: #000000;
 }
 /*# sourceMappingURL=styles_mobile.css.map */

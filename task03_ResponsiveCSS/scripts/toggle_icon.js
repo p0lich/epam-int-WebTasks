@@ -1,3 +1,3 @@
 function togglePlusIcon(icon) {
-    icon.classList.toggle("fa-circle-minus")
+    icon.classList.toggle("fa-circle-minus");
 }

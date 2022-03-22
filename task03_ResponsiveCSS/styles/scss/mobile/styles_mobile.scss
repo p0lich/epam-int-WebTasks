@@ -1,5 +1,19 @@
 @import "../const";
 
+.Page {
+    display: flex;
+    flex-direction: column;
+}
+
+.Menu_Section {
+    display: flex;
+    flex-direction: column;
+}
+
+.Mobile_Menu_Button {
+
+}
+
 .Side_Navigation {
     height: 100%;
     width: 0;
@@ -46,7 +60,14 @@
     padding: 1% 2%;
 }
 
+#project_details {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
 .Project_About {
+    display: flex;
+    flex-direction: column;
     width: auto;
 }
 
@@ -133,18 +154,6 @@
     padding: 0 2px;
 }
 
-.Person_Option {
-    border-bottom: 1px solid $border_dark;
-}
-
-.Person_Option:last-child {
-    border-bottom: none;
-}
-
-.Person_About .Personal {
-    color: $font_dark;
-}
-
 .Public_Box {
     color: $font_red;
     border: 1px solid $border_red;
@@ -157,4 +166,21 @@
     font-size: 0.75rem;
     columns: $font_gray;
     margin-left: 5%;
+}
+
+.Person_Menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.Person_Option {
+    border-bottom: 1px solid $border_dark;
+}
+
+.Person_Option:last-child {
+    border-bottom: none;
+}
+
+.Person_About .Personal {
+    color: $font_dark;
 }

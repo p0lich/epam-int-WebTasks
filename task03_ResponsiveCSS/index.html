@@ -12,156 +12,164 @@
 </head>
 <body>
 
-    <div class="Top_Icons">
-        <img src="images/menu.PNG" onclick="openNav()">
-        <img src="images/epam_logo.PNG">
-    </div>
-
-    <div id="sideNav" class="Side_Navigation">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="">EXPERT SEARCH</a>
-        <a href="">SAVED EXPERTS</a>
-        <a href="">PROJECTS <i class="fa-solid fa-flag"></i></a>
-        <a href="">CONSULTATIONS</a>
-        <a href="">EVENTS</a>
-        <a href="">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></a>
-        <p><i class="fa-solid fa-user"></i> LOGGED IN AS</p>
-        <p>Girish Gopalan</p>
-    </div>
-
-    <div class="Content">
-        <h3>Project List</h3>
-        <h1>Test Project last</h1><i onclick="togglePlusIcon(this)" class="fa-solid fa-circle-plus"></i>
-
-        <div class="Project_About">
-            <div class="flex-row-space_between Top_Line">
-                <p class="Description">Create date</p>
-                <p class="Value">01/20/15</p>
+    <div class="Page">
+        <div class="Menu_Section">
+            <div class="Top_Icons">
+                <img src="images/menu.PNG" onclick="openNav()" class="Mobile_Menu_Button">
+                <img src="images/epam_logo.PNG">
             </div>
 
-            <div class="flex-row-space_between Top_Line">
-                <p class="Description">Target industries</p>
-                <p class="Value">Wireline Telephone Equipment</p>
-            </div>
-
-            <div class="flex-row-space_between Top_Line">
-                <p class="Description">Bios sent</p>
-                <p class="Value">10</p>
-            </div>
-
-            <div class="flex-row-space_between Top_Line">
-                <p class="Description">Calls sheduled</p>
-                <p class="Value">2</p>
-            </div>
-
-            <div class="flex-row-space_between Top_Line">
-                <p class="Description">Request consultations</p>
-                <p class="Value">10</p>
-            </div>
-
-            <div class="flex-row-space_between Top_Line">
-                <p class="Description">Target companies</p>
-                <p class="Value">Frontier Communications Corporation [FTR]</p>
-            </div>
-
-            <div class="flex-row-space_between Top_Line">
-                <p class="Description">Calls completed</p>
-                <p class="Value">2</p>
-            </div>
-
-            <div class="flex-row-space_between Top_Line">
-                <p class="Description">Calls in sheduling</p>
-                <p class="Value">1</p>
+            <div id="sideNav" class="Side_Navigation">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="">EXPERT SEARCH</a>
+                <a href="">SAVED EXPERTS</a>
+                <a href="">PROJECTS <i class="fa-solid fa-flag"></i></a>
+                <a href="">CONSULTATIONS</a>
+                <a href="">EVENTS</a>
+                <a href="">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></a>
+                <p><i class="fa-solid fa-user"></i> LOGGED IN AS</p>
+                <p>Girish Gopalan</p>
             </div>
         </div>
 
-        <div class="Switch">
-            <p class="Element Active">Experts <i class="fa-solid fa-flag"></i></p>
-            <p class="Element NotActive">Consultation <i class="fa-solid fa-phone"></i></p>
-        </div>
+        <div class="Content">
+            <h3>Project List</h3>
+            <h1>Test Project last <i onclick="togglePlusIcon(this)" class="fa-solid fa-circle-plus"></i></h1>
 
-        <div class="Form_Search">
-            <div class="Buttons_Group">
-                <button>EXPAND ALL</button>
-                <button>EXPORT</button>
-                <button><i class="fa-solid fa-filter"></i>FILTERS</button>
-            </div>
-            
-            <select>
-                <option value="Status">Sort by Status</option>
-            </select>
-        </div>
+            <div id="project_details" name="p_details" class="Project_About">
+                <div class="About_Part">
+                    <div class="flex-row-space_between Top_Line">
+                        <p class="Description">Create date</p>
+                        <p class="Value">01/20/15</p>
+                    </div>
 
-        <div class="Person_Info">
-            <div class="Person_About">
-                <div class="Short_Description">
-                    <p>INDUSTRY EXPERT</p>
+                    <div class="flex-row-space_between Top_Line">
+                        <p class="Description">Target industries</p>
+                        <p class="Value">Wireline Telephone Equipment</p>
+                    </div>
 
-                    <div class="Date_Block">
-                        <p class="Date">07/13/14</p>
-                        <p class="New">NEW</p>
+                    <div class="flex-row-space_between Top_Line">
+                        <p class="Description">Bios sent</p>
+                        <p class="Value">10</p>
+                    </div>
+
+                    <div class="flex-row-space_between Top_Line">
+                        <p class="Description">Calls sheduled</p>
+                        <p class="Value">2</p>
                     </div>
                 </div>
 
-                <h1 class="Personal">Mikhail Semichev</h1>
+                <div class="About_Part">
+                    <div class="flex-row-space_between Top_Line">
+                        <p class="Description">Request consultations</p>
+                        <p class="Value">10</p>
+                    </div>
 
-                <div class="flex-row-baseline">
-                    <h2 class="Personal">EPAM</h2>
-                    <p class="Public_Box">PUBLIC</p>
+                    <div class="flex-row-space_between Top_Line">
+                        <p class="Description">Target companies</p>
+                        <p class="Value">Frontier Communications Corporation [FTR]</p>
+                    </div>
+
+                    <div class="flex-row-space_between Top_Line">
+                        <p class="Description">Calls completed</p>
+                        <p class="Value">2</p>
+                    </div>
+
+                    <div class="flex-row-space_between Top_Line">
+                        <p class="Description">Calls in sheduling</p>
+                        <p class="Value">1</p>
+                    </div>
                 </div>
-
-                <div class="flex-row-baseline">
-                    <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
-                </div>
-
-                <p>Выполнить адаптивную верстку страницы. При этом необходимо применять Mobile First подход.дходе первым верстается макет для мобильных устройств. Начиная с ширины 750 пикселей начинаем использовать @media для переопределения нужных стилей.</p>
-
-                <p>Ниже представлены три макета в порядке увеличения ширины экрана.</p>
-
-                <p>Размеры, цвета блоков и шрифтов взять из макетов. Для иконок необходимо подключить библиотеку Font Awesome (https://fortawesome.github.io/Font-Awesome/).</p>
-                <p>Если в библиотеке нет нужной нам иконки, вырезаем ее из картинки или ищем аналогичную в интернете. Такие иконки должны быть объединены в общий спрайт иконок.</p>
             </div>
 
-            <div>
-                <p class="Person_Option"><i class="fa-solid fa-phone"></i> SHEDULE</p>
-                <p class="Person_Option"><i class="fa-solid fa-circle-info"></i> REQUEST INFO</p>
-                <p class="Person_Option"><i class="fa-solid fa-circle-xmark"></i> DECLINE</p>
+            <div class="Switch">
+                <p class="Element Active">Experts <i class="fa-solid fa-flag"></i></p>
+                <p class="Element NotActive">Consultation <i class="fa-solid fa-phone"></i></p>
             </div>
-        </div>
 
-        <div class="Person_Info">
-            <div class="Person_About">
-                <div class="Short_Description">
-                    <p>INDUSTRY EXPERT</p>
+            <div class="Form_Search">
+                <div class="Buttons_Group">
+                    <button>EXPAND ALL</button>
+                    <button><i class="fa-solid fa-file-export"></i> EXPORT</button>
+                    <button><i class="fa-solid fa-filter"></i> FILTERS</button>
+                </div>
+                
+                <select>
+                    <option value="Status">Sort by Status</option>
+                </select>
+            </div>
 
-                    <div class="Date_Block">
-                        <p class="Date">07/13/14</p>
-                        <p class="New">NEW</p>
+            <div class="Person_Info">
+                <div class="Person_About">
+                    <div class="Short_Description">
+                        <p>INDUSTRY EXPERT</p>
+
+                        <div class="Date_Block">
+                            <p class="Date">07/13/14</p>
+                            <p class="New">NEW</p>
+                        </div>
+                    </div>
+
+                    <h1 class="Personal">Mikhail Semichev</h1>
+
+                    <div class="flex-row-baseline">
+                        <h2 class="Personal">EPAM</h2>
+                        <p class="Public_Box">PUBLIC</p>
+                    </div>
+
+                    <div class="flex-row-baseline">
+                        <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
+                    </div>
+
+                    <p>Выполнить адаптивную верстку страницы. При этом необходимо применять Mobile First подход.дходе первым верстается макет для мобильных устройств. Начиная с ширины 750 пикселей начинаем использовать @media для переопределения нужных стилей.</p>
+
+                    <p>Ниже представлены три макета в порядке увеличения ширины экрана.</p>
+
+                    <p>Размеры, цвета блоков и шрифтов взять из макетов. Для иконок необходимо подключить библиотеку Font Awesome (https://fortawesome.github.io/Font-Awesome/).</p>
+                    <p>Если в библиотеке нет нужной нам иконки, вырезаем ее из картинки или ищем аналогичную в интернете. Такие иконки должны быть объединены в общий спрайт иконок.</p>
+                </div>
+
+                <div class="Person_Menu">
+                    <p class="Person_Option"><i class="fa-solid fa-phone"></i> SHEDULE</p>
+                    <p class="Person_Option"><i class="fa-solid fa-circle-info"></i> REQUEST INFO</p>
+                    <p class="Person_Option"><i class="fa-solid fa-circle-xmark"></i> DECLINE</p>
+                </div>
+            </div>
+
+            <div class="Person_Info">
+                <div class="Person_About">
+                    <div class="Short_Description">
+                        <p>INDUSTRY EXPERT</p>
+
+                        <div class="Date_Block">
+                            <p class="Date">07/13/14</p>
+                            <p class="New">NEW</p>
+                        </div>
+                    </div>
+
+                    <h1 class="Personal">Mikhail Semichev</h1>
+
+                    <div class="flex-row-baseline">
+                        <h2 class="Personal">EPAM</h2>
+                        <p class="Public_Box">PUBLIC</p>
+                    </div>
+
+                    <div class="flex-row-baseline">
+                        <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
                     </div>
                 </div>
 
-                <h1 class="Personal">Mikhail Semichev</h1>
-
-                <div class="flex-row-baseline">
-                    <h2 class="Personal">EPAM</h2>
-                    <p class="Public_Box">PUBLIC</p>
+                <div class="Person_Menu">
+                    <p class="Person_Option"><i class="fa-solid fa-phone"></i> SHEDULE</p>
+                    <p class="Person_Option"><i class="fa-solid fa-circle-info"></i> REQUEST INFO</p>
+                    <p class="Person_Option"><i class="fa-solid fa-circle-xmark"></i> DECLINE</p>
                 </div>
-
-                <div class="flex-row-baseline">
-                    <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
-                </div>
-            </div>
-
-            <div>
-                <p class="Person_Option"><i class="fa-solid fa-phone"></i> SHEDULE</p>
-                <p class="Person_Option"><i class="fa-solid fa-circle-info"></i> REQUEST INFO</p>
-                <p class="Person_Option"><i class="fa-solid fa-circle-xmark"></i> DECLINE</p>
             </div>
         </div>
     </div>
 
     <script src="https://kit.fontawesome.com/a870180150.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/side_menu.js"></script>
-    <!-- <script type="text/javascript" src="scripts/toggle_icon.js"></script> -->
+    <script type="text/javascript" src="scripts/toggle_icon.js"></script>
 </body>
 </html>

@@ -1,3 +1,55 @@
-@media all and (min-width: 1200px) {
+@import "../const";
 
+@media all and (min-width: 1200px) {
+    .Page {
+        flex-direction: row;
+    }
+
+    .Mobile_Menu_Button {
+        display: none;
+    }
+
+    .Side_Navigation {
+        width: 100%;
+        overflow-x: visible;
+        position: relative;
+        padding-top: 0;
+        transition: 0ms;
+    }
+
+    .Side_Navigation a {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .closebtn {
+        display: none;
+        visibility: hidden;
+    }
+
+    .Project_About {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .About_Part {
+        width: 48%;
+    }
+
+    .Person_Menu {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .Person_Option {
+        width: 33%;
+        text-align: center;
+        border-bottom: none;
+        border-right: 1px solid $border_dark;
+    }
+
+    .Person_Option:first-child {
+        border-right: none;
+    }
 }
