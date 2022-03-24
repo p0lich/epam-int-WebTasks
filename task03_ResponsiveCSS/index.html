@@ -11,7 +11,6 @@
     <title>Index</title>
 </head>
 <body>
-
     <div class="Page">
         <div class="Menu_Section">
             <div class="Top_Icons">
@@ -33,10 +32,13 @@
         </div>
 
         <div class="Content">
-            <h3>Project List</h3>
-            <h1>Test Project last <i onclick="togglePlusIcon(this)" class="fa-solid fa-circle-plus"></i></h1>
+            <h3><i class="fa-solid fa-chevron-left"></i> Project List</h3>
+            <div class="Project_Title">
+                <h1>Test Project last <i id="plus_icon" class="fa-solid fa-circle-plus" onclick="displayInfo(this)"></i></h1>
+                <button class="Button Hide"><i class="fa-solid fa-file-export"></i> EXPORT</button>
+            </div>
 
-            <div id="project_details" name="p_details" class="Project_About">
+            <div id="project_details" class="Project_About">
                 <div class="About_Part">
                     <div class="flex-row-space_between Top_Line">
                         <p class="Description">Create date</p>
@@ -82,87 +84,100 @@
                 </div>
             </div>
 
-            <div class="Switch">
-                <p class="Element Active">Experts <i class="fa-solid fa-flag"></i></p>
-                <p class="Element NotActive">Consultation <i class="fa-solid fa-phone"></i></p>
-            </div>
-
-            <div class="Form_Search">
-                <div class="Buttons_Group">
-                    <button>EXPAND ALL</button>
-                    <button><i class="fa-solid fa-file-export"></i> EXPORT</button>
-                    <button><i class="fa-solid fa-filter"></i> FILTERS</button>
+            <div id="person_block">
+                <div class="Switch">
+                    <p class="Element Active">Experts <i class="fa-solid fa-flag"></i></p>
+                    <p class="Element NotActive">Consultation <i class="fa-solid fa-phone"></i></p>
                 </div>
-                
-                <select>
-                    <option value="Status">Sort by Status</option>
-                </select>
-            </div>
 
-            <div class="Person_Info">
-                <div class="Person_About">
-                    <div class="Short_Description">
-                        <p>INDUSTRY EXPERT</p>
+                <div class="Form_Search">
+                    <div class="Buttons_Group">
+                        <button class="Button">EXPAND ALL</button>
 
-                        <div class="Date_Block">
-                            <p class="Date">07/13/14</p>
-                            <p class="New">NEW</p>
+                        <select class="Select_Field Hide_Select_Mobile">
+                            <option value="Status">Sort by Status</option>
+                        </select>
+
+                        <button class="Button Hide"><i class="fa-solid fa-file-export"></i> EXPORT</button>
+                        <div class="Left_Pointer flex-row-baseline">
+                            <div class="Rotate_Square"></div>
+                            <button class="Button"><i class="fa-solid fa-filter"></i> FILTERS</button>
+                        </div>
+                    </div>
+                    
+                    <select class="Select_Field  Hide_Select">
+                        <option value="Status">Sort by Status</option>
+                    </select>
+                </div>
+
+                <div class="Person_Info">
+                    <div class="Person_About">
+                        <div class="Short_Description">
+                            <p>INDUSTRY EXPERT</p>
+
+                            <div class="Date_Block">
+                                <p class="Date">07/13/14</p>
+                                <p class="New">NEW</p>
+                            </div>
+                        </div>
+
+                        <h1 class="Personal">Mikhail Semichev</h1>
+
+                        <div class="flex-row-baseline">
+                            <h2 class="Personal">EPAM</h2>
+                            <p class="Public_Box">PUBLIC</p>
+                        </div>
+
+                        <div class="flex-row-baseline">
+                            <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
+                        </div>
+
+                        <div class="Personal_Top">
+                            <p>Выполнить адаптивную верстку страницы. При этом необходимо применять Mobile First подход.дходе первым верстается макет для мобильных устройств. Начиная с ширины 750 пикселей начинаем использовать @media для переопределения нужных стилей.</p>
+                            <p>Ниже представлены три макета в порядке увеличения ширины экрана.</p>
+                        </div>
+
+                        <div class="Personal_Bottom">
+                            <p>Размеры, цвета блоков и шрифтов взять из макетов. Для иконок необходимо подключить библиотеку Font Awesome (https://fortawesome.github.io/Font-Awesome/).</p>
+                            <p>Если в библиотеке нет нужной нам иконки, вырезаем ее из картинки или ищем аналогичную в интернете. Такие иконки должны быть объединены в общий спрайт иконок.</p>
                         </div>
                     </div>
 
-                    <h1 class="Personal">Mikhail Semichev</h1>
-
-                    <div class="flex-row-baseline">
-                        <h2 class="Personal">EPAM</h2>
-                        <p class="Public_Box">PUBLIC</p>
+                    <div class="Person_Menu">
+                        <p class="Person_Option"><i class="fa-solid fa-phone"></i> SHEDULE</p>
+                        <p class="Person_Option"><i class="fa-solid fa-circle-info"></i> REQUEST INFO</p>
+                        <p class="Person_Option"><i class="fa-solid fa-circle-xmark"></i> DECLINE</p>
                     </div>
-
-                    <div class="flex-row-baseline">
-                        <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
-                    </div>
-
-                    <p>Выполнить адаптивную верстку страницы. При этом необходимо применять Mobile First подход.дходе первым верстается макет для мобильных устройств. Начиная с ширины 750 пикселей начинаем использовать @media для переопределения нужных стилей.</p>
-
-                    <p>Ниже представлены три макета в порядке увеличения ширины экрана.</p>
-
-                    <p>Размеры, цвета блоков и шрифтов взять из макетов. Для иконок необходимо подключить библиотеку Font Awesome (https://fortawesome.github.io/Font-Awesome/).</p>
-                    <p>Если в библиотеке нет нужной нам иконки, вырезаем ее из картинки или ищем аналогичную в интернете. Такие иконки должны быть объединены в общий спрайт иконок.</p>
                 </div>
 
-                <div class="Person_Menu">
-                    <p class="Person_Option"><i class="fa-solid fa-phone"></i> SHEDULE</p>
-                    <p class="Person_Option"><i class="fa-solid fa-circle-info"></i> REQUEST INFO</p>
-                    <p class="Person_Option"><i class="fa-solid fa-circle-xmark"></i> DECLINE</p>
-                </div>
-            </div>
+                <div class="Person_Info">
+                    <div class="Person_About">
+                        <div class="Short_Description">
+                            <p>COMPETITOR</p>
 
-            <div class="Person_Info">
-                <div class="Person_About">
-                    <div class="Short_Description">
-                        <p>INDUSTRY EXPERT</p>
+                            <div class="Date_Block">
+                                <p class="Date">07/13/14</p>
+                                <p class="New">NEW</p>
+                            </div>
+                        </div>
 
-                        <div class="Date_Block">
-                            <p class="Date">07/13/14</p>
-                            <p class="New">NEW</p>
+                        <h1 class="Personal">Mikhail Semichev</h1>
+
+                        <div class="flex-row-baseline">
+                            <h2 class="Personal">EPAM</h2>
+                            <p class="Public_Box">PUBLIC</p>
+                        </div>
+
+                        <div class="flex-row-baseline">
+                            <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
                         </div>
                     </div>
 
-                    <h1 class="Personal">Mikhail Semichev</h1>
-
-                    <div class="flex-row-baseline">
-                        <h2 class="Personal">EPAM</h2>
-                        <p class="Public_Box">PUBLIC</p>
+                    <div class="Person_Menu">
+                        <p class="Person_Option"><i class="fa-solid fa-phone"></i> SHEDULE</p>
+                        <p class="Person_Option"><i class="fa-solid fa-circle-info"></i> REQUEST INFO</p>
+                        <p class="Person_Option"><i class="fa-solid fa-circle-xmark"></i> DECLINE</p>
                     </div>
-
-                    <div class="flex-row-baseline">
-                        <p class="Personal">FE developer</p> <p class="Personal Personal_Date">(12/01/11 - Present)</p>
-                    </div>
-                </div>
-
-                <div class="Person_Menu">
-                    <p class="Person_Option"><i class="fa-solid fa-phone"></i> SHEDULE</p>
-                    <p class="Person_Option"><i class="fa-solid fa-circle-info"></i> REQUEST INFO</p>
-                    <p class="Person_Option"><i class="fa-solid fa-circle-xmark"></i> DECLINE</p>
                 </div>
             </div>
         </div>
@@ -171,5 +186,6 @@
     <script src="https://kit.fontawesome.com/a870180150.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/side_menu.js"></script>
     <script type="text/javascript" src="scripts/toggle_icon.js"></script>
+    <script type="text/javascript" src="scripts/toggle_info.js"></script>
 </body>
 </html>

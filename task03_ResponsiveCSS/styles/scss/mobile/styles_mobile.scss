@@ -37,8 +37,21 @@
     border-bottom: 1px solid $border_dark;
 }
 
+.Side_Navigation a:hover {
+    background-color: $background_darker;
+}
+
 .Side_Navigation a:first-child {
     border-bottom: none;
+}
+
+.Side_Navigation p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $font_light;
+    display: block;
+    transition: 0.3s;
 }
   
 .Side_Navigation .closebtn {
@@ -60,15 +73,27 @@
     padding: 1% 2%;
 }
 
-#project_details {
-    transition: margin-left .5s;
-    padding: 20px;
+.Project_Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Project_Title .Hide {
+    display: none;
+}
+
+#person_block {
+    transition: margin-top .5s;
 }
 
 .Project_About {
     display: flex;
     flex-direction: column;
     width: auto;
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.5s;
 }
 
 .Top_Line {
@@ -116,7 +141,37 @@
 }
 
 .Buttons_Group {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 5px;
+}
+
+.Buttons_Group .Button {
+    border: 1px solid $background_dark;
+    border-radius: 5px;
+    background-color: $background_gray;
+}
+
+.Rotate_Square {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: $background_gray;
+    border: 5px solid transparent;
+    border-left: 1px solid $border_dark;
+    border-bottom: 1px solid $border_dark;
+    transform: rotate(45deg);
+    margin-top: 3px;
+    margin-left: -4px;
+    box-sizing: border-box;
+}
+
+.Select_Field {
+    margin: 0;
+}
+
+.Hide_Select_Mobile {
+    display: none;
 }
 
 .Person_Info {
@@ -166,6 +221,15 @@
     font-size: 0.75rem;
     columns: $font_gray;
     margin-left: 5%;
+}
+
+.Personal_Top {
+    border-bottom: 1px solid $border_gray;
+    padding: 10px 0;
+}
+
+.Personal_Bottom {
+    padding: 10px 0;
 }
 
 .Person_Menu {

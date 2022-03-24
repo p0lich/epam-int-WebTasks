@@ -4,9 +4,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    background-color: #828282;
   }
   .Mobile_Menu_Button {
     display: none;
+  }
+  .Top_Icons {
+    width: 100%;
+  }
+  #sideNav {
+    width: 100%;
   }
   .Side_Navigation {
     width: 100%;
@@ -17,12 +24,50 @@
     transition: 0ms;
   }
   .Side_Navigation a {
-    font-size: 1.2rem;
-    padding: 0;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  .Side_Navigation p {
+    font-size: 1rem;
+    padding: 10px 0;
   }
   .closebtn {
     display: none;
     visibility: hidden;
+  }
+  .Content {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .Project_Title .Hide {
+    display: block;
+    border: 1px solid #464646;
+    border-radius: 5px;
+    background-color: #828282;
+  }
+  .Form_Search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Buttons_Group .Hide {
+    display: none;
+  }
+  .Select_Field {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    margin: 0 10px;
+  }
+  .Hide_Select {
+    display: none;
+  }
+  .Hide_Select_Mobile {
+    display: block;
   }
   .Project_About {
     display: -webkit-box;

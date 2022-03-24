@@ -43,8 +43,22 @@
   border-bottom: 1px solid #000000;
 }
 
+.Side_Navigation a:hover {
+  background-color: #2e2e2e;
+}
+
 .Side_Navigation a:first-child {
   border-bottom: none;
+}
+
+.Side_Navigation p {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #EEEEEE;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .Side_Navigation .closebtn {
@@ -68,10 +82,25 @@
   padding: 1% 2%;
 }
 
-#project_details {
-  -webkit-transition: margin-left .5s;
-  transition: margin-left .5s;
-  padding: 20px;
+.Project_Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Project_Title .Hide {
+  display: none;
+}
+
+#person_block {
+  -webkit-transition: margin-top .5s;
+  transition: margin-top .5s;
 }
 
 .Project_About {
@@ -83,6 +112,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: auto;
+  height: 0;
+  overflow-y: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .Top_Line {
@@ -139,7 +172,43 @@
 }
 
 .Buttons_Group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 5px;
+}
+
+.Buttons_Group .Button {
+  border: 1px solid #464646;
+  border-radius: 5px;
+  background-color: #828282;
+}
+
+.Rotate_Square {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #828282;
+  border: 5px solid transparent;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: 3px;
+  margin-left: -4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Select_Field {
+  margin: 0;
+}
+
+.Hide_Select_Mobile {
+  display: none;
 }
 
 .Person_Info {
@@ -199,6 +268,15 @@
   -webkit-columns: #2e2e2e;
           columns: #2e2e2e;
   margin-left: 5%;
+}
+
+.Personal_Top {
+  border-bottom: 1px solid #828282;
+  padding: 10px 0;
+}
+
+.Personal_Bottom {
+  padding: 10px 0;
 }
 
 .Person_Menu {
