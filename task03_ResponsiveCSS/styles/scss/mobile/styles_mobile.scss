@@ -10,10 +10,6 @@
     flex-direction: column;
 }
 
-.Mobile_Menu_Button {
-
-}
-
 .Side_Navigation {
     height: 100%;
     width: 0;
@@ -91,7 +87,7 @@
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 0;
+    height: 100%;
     overflow-y: hidden;
     transition: 0.5s;
 }
@@ -184,6 +180,8 @@
     width: 100%;
     color: $font_red;
     background-color: $background_light;
+    border-bottom: 1px solid $border_dark;
+    transition: 0.5s;
 }
 
 .Short_Description {

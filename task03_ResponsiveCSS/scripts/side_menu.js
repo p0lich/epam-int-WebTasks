@@ -3,5 +3,6 @@ function openNav() {
 }
   
 function closeNav() {
-    document.getElementById("sideNav").style.width = "0";
+    // document.getElementById("sideNav").style.width = "0";
+    document.getElementById("sideNav").removeAttribute("style");
 }

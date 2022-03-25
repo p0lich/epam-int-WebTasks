@@ -1,18 +1,16 @@
 function displayInfo(x) {
-    x.classList.toggle("fa-circle-minus");
+    x.classList.toggle("fa-circle-plus");
+
+    var top_block = document.getElementById("project_details");
+    var bottom_block = document.getElementById("person_block");
 
     if (window.screen.width >= 480) {
-        document.getElementById("project_details").style.height = "90px";
-        document.getElementById("person_block").style.marginTop = "15px";
+        top_block.style.height = (top_block.style.height == "100%") ? "0" : "100%";
+        bottom_block.style.marginTop = (bottom_block.style.marginTop == "15px") ? "0" : "15px";
     } else {
-        document.getElementById("project_details").style.height = "150px";
-        document.getElementById("person_block").style.marginTop = "10px";
+        top_block.style.height = (top_block.style.height == "100%") ? "0" : "100%";
+        bottom_block.style.marginTop = (bottom_block.style.marginTop == "10px") ? "0" : "10px";
     }
 
     
-}
-  
-function hideInfo() {
-    // document.getElementById("mySidebar").style.width = "0";
-    // document.getElementById("main").style.marginLeft = "0";
 }
