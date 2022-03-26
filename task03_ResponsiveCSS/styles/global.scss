@@ -21,6 +21,11 @@ body {
     align-items: baseline;
 }
 
+.flex-row-center {
+    display: flex;
+    align-items: center;
+}
+
 .flex-row-space_between {
     display: flex;
     justify-content: space-between;

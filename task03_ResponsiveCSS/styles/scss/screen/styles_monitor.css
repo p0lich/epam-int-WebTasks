@@ -4,7 +4,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background-color: silver;
+    background-color: #F2F2F2;
   }
   .Mobile_Menu_Button {
     display: none;
@@ -45,9 +45,9 @@
   }
   .Project_Title .Hide {
     display: block;
-    border: 1px solid #464646;
+    border: 1px solid #333333;
     border-radius: 5px;
-    background-color: silver;
+    background-color: #F2F2F2;
   }
   .Form_Search {
     display: -webkit-box;
