@@ -6,34 +6,8 @@
             flex-direction: row;
     background-color: #F2F2F2;
   }
-  .Mobile_Menu_Button {
-    display: none;
-  }
   .Top_Icons {
     width: 100%;
-  }
-  #sideNav {
-    width: 100%;
-  }
-  .Side_Navigation {
-    width: 100%;
-    overflow-x: visible;
-    position: relative;
-    padding-top: 0;
-    -webkit-transition: 0ms;
-    transition: 0ms;
-  }
-  .Side_Navigation a {
-    font-size: 1rem;
-    padding: 10px 0;
-  }
-  .Side_Navigation p {
-    font-size: 1rem;
-    padding: 10px 0;
-  }
-  .closebtn {
-    display: none;
-    visibility: hidden;
   }
   .Content {
     -ms-flex-item-align: center;
@@ -42,65 +16,6 @@
     width: 60%;
     margin-left: 15%;
     margin-right: 15%;
-  }
-  .Project_Title .Hide {
-    display: block;
-    border: 1px solid #333333;
-    border-radius: 5px;
-    background-color: #F2F2F2;
-  }
-  .Form_Search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .Buttons_Group .Hide {
-    display: none;
-  }
-  .Select_Field {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-    margin: 0 10px;
-  }
-  .Hide_Select {
-    display: none;
-  }
-  .Hide_Select_Mobile {
-    display: block;
-  }
-  .Project_About {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .About_Part {
-    width: 48%;
-  }
-  .Person_Menu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .Person_Option {
-    width: 33%;
-    text-align: center;
-    border-bottom: none;
-    border-right: 1px solid #000000;
-  }
-  .Person_Option:first-child {
-    border-right: none;
   }
 }
 /*# sourceMappingURL=styles_monitor.css.map */

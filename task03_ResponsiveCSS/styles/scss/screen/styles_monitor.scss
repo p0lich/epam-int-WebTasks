@@ -6,39 +6,8 @@
         background-color: $background_gray;
     }
 
-    .Mobile_Menu_Button {
-        display: none;
-    }
-
     .Top_Icons {
         width: 100%;
-    }
-
-    #sideNav {
-        width: 100%;
-    }
-
-    .Side_Navigation {
-        width: 100%;
-        overflow-x: visible;
-        position: relative;
-        padding-top: 0;
-        transition: 0ms;
-    }
-
-    .Side_Navigation a {
-        font-size: 1rem;
-        padding: 10px 0;
-    }
-
-    .Side_Navigation p {
-        font-size: 1rem;
-        padding: 10px 0;
-    }
-
-    .closebtn {
-        display: none;
-        visibility: hidden;
     }
 
     .Content {
@@ -46,59 +15,5 @@
         width: 60%;
         margin-left: 15%;
         margin-right: 15%;
-    }
-
-    .Project_Title .Hide {
-        display: block;
-        border: 1px solid $background_dark;
-        border-radius: 5px;
-        background-color: $background_gray;
-    }
-
-    .Form_Search {
-        display: flex;
-    }
-
-    .Buttons_Group .Hide {
-        display: none;
-    }
-
-    .Select_Field {
-        flex-grow: 2;
-        margin: 0 10px;
-    }
-
-    .Hide_Select {
-        display: none;
-    }
-
-    .Hide_Select_Mobile {
-        display: block;
-    }
-
-    .Project_About {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .About_Part {
-        width: 48%;
-    }
-
-    .Person_Menu {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-
-    .Person_Option {
-        width: 33%;
-        text-align: center;
-        border-bottom: none;
-        border-right: 1px solid $border_dark;
-    }
-
-    .Person_Option:first-child {
-        border-right: none;
     }
 }
