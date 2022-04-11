@@ -5,17 +5,19 @@ function evaluateExpression() {
 }
 
 function parse(expression) {
-    if(expression[expression.length - 1] != "=") {
+    let normalizeString = expression.replace(/[^+\-*/=\.0-9]/g,'');
+
+    if(normalizeString[normalizeString.length - 1] != "=") {
         alert("there must be letter \"=\" in the end");
         return null;
     }
 
-    let normalizeString = expression.replace(/ /g,'').slice(0, -1);
-
-    if(!expressionCheck(normalizeString)) {
+    if(!expressionCheck(normalizeString.slice(0, -1))) {
         alert("can't parse this expression");
         return null;
     }
+
+    normalizeString = normalizeString.slice(0, -1);
 
     let result = parsePlusSeparatedExpression(normalizeString, '+');   
     return result;
