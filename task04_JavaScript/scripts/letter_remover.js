@@ -1,7 +1,7 @@
 function removeLetters() {
     let text = document.getElementById('text_input').value;
 
-    let splitArray = str.split(/[ \.\?,;:!]/);
+    let splitArray = text.split(/[ \.\?,;:!]/);
     let wordsCount = getWordsCount(splitArray);
 
     let lettersMap = getLettersMap(text);
