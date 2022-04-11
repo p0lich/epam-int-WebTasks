@@ -21,8 +21,12 @@
     </div>
 
     <div class="Script_Test">
-        <input type="date" id="date_input">
+        <input type="datetime-local" id="date_input">
         <input type="text" id="format_input">
+        <select id="locale_input">
+            <option value="ru">ru</option>
+            <option value="en">en</option>
+        </select>
         <button onclick="formatDate()">Test</button>
         <input type="text" id="date_output">
     </div>

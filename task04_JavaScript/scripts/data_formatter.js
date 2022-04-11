@@ -16,12 +16,13 @@ let dateFormats = {
 function formatDate() {
     let date = new Date(document.getElementById('date_input').value);
 	let format = document.getElementById('format_input').value;
+	let locale = document.getElementById('locale_input').value;
 
 	let splitFormat = splitDateFormat(format);
 
 	let displayFormat = [];
 	for(let i = 0; i < splitFormat.length; i++) {
-		displayFormat[i] = replaceFormatLetters(splitFormat[i], date);
+		displayFormat[i] = replaceFormatLetters(splitFormat[i], date, locale);
 	}
 
 	let a = date.getHours();
@@ -60,41 +61,41 @@ function splitDateFormat(format) {
 	return result;
 }
 
-function replaceFormatLetters(format, date) {
-	switch(format) {
+function replaceFormatLetters(formatString, date, locale = 'ru') {
+	switch(formatString) {
 		case 'yy':
-			return date.getFullYear() % 100;
+			return Intl.DateTimeFormat(locale, {year: "2-digit"}).format(date);
 		case 'yyyy':
-			return date.getFullYear();
+			return Intl.DateTimeFormat(locale, {year: "numeric"}).format(date);
 		case 'M':
-			return date.getMonth();
+			return Intl.DateTimeFormat(locale, {month: "numeric"}).format(date);
 		case 'MM':
-			return date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth();
+			return Intl.DateTimeFormat(locale, {month: "2-digit"}).format(date);
 		case 'MMM':
-			return dateFormats.monthShortNames[date.getMonth() - 1];
+			return Intl.DateTimeFormat(locale, {month: "short"}).format(date);
 		case 'MMMM':
-			return dateFormats.monthNames[date.getMonth() - 1];
+			return Intl.DateTimeFormat(locale, {month: "long"}).format(date);
 		case 'd':
-			return date.getDate();
+			return Intl.DateTimeFormat(locale, {day: "numeric"}).format(date);
 		case 'dd':
-			return date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+			return Intl.DateTimeFormat(locale, {day: "2-digit"}).format(date);
 		case 'H':
-			return date.getHours();
+			return Intl.DateTimeFormat(locale, {hour: "numeric", hour12: false}).format(date);
 		case 'HH':
-			return date.getHours() < 10 ? '0' + date.getHours() : date.getHours();
+			return Intl.DateTimeFormat(locale, {hour: "2-digit", hour12: false}).format(date);
 		case 'h':
-			return date.getHours();
+			return Intl.DateTimeFormat(locale, {hour: "numeric", hour12: true}).format(date);
 		case 'hh':
-			return date.getHours() < 10 ? '0' + date.getHours() : date.getHours();
+			return Intl.DateTimeFormat(locale, {hour: "2-digit", hour12: true}).format(date);
 		case 'm':
-			return date.getMinutes();
+			return Intl.DateTimeFormat(locale, {minute: "numeric"}).format(date);
 		case 'mm':
-			return date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes();
+			return Intl.DateTimeFormat(locale, {minute: "2-digit"}).format(date);
 		case 's':
-			return date.getSeconds();
+			return Intl.DateTimeFormat(locale, {second: "numeric"}).format(date);
 		case 'ss':
-			return date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds();
+			return Intl.DateTimeFormat(locale, {second: "2-digit"}).format(date);
 		default:
-			return format;
+			return formatString;
 	}
 }
