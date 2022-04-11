@@ -4,13 +4,13 @@ function removeLetters() {
     let splitArray = text.split(/[ \.\?,;:!]/);
     let wordsCount = getWordsCount(splitArray);
 
-    let lettersMap = getLettersMap(text);
+    let lettersMap = getLettersMap(text.toLowerCase());
     
     let letterRepeatMap = calculateLettersRepeatCount(splitArray, lettersMap);
 
     let newText = "";
     for(let i = 0; i < text.length; i++) {
-        if(wordsCount > 0 && letterRepeatMap.get(text[i]) === wordsCount) {
+        if(wordsCount > 0 && letterRepeatMap.get(text[i].toLowerCase()) === wordsCount) {
             continue;
         }
         newText += text[i];
@@ -47,7 +47,7 @@ function calculateLettersRepeatCount(splitString, lettersMap) {
             continue;
         }
 
-        let wordSet = new Set(splitString[i]);
+        let wordSet = new Set(splitString[i].toLowerCase());
 
         for (let letter of wordSet) {
             lettersMap.set(letter, lettersMap.get(letter) + 1);
